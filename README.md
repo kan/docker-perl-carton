@@ -1,5 +1,5 @@
 # docker-perl-carton
-Dockerfile for perl &amp; carton on alpine
+Dockerfile for perl &amp; carton
 
 # SYNOPSYS
 
