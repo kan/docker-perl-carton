@@ -1,4 +1,5 @@
-FROM perl:5.28.1
+ARG BASE_TAG
+FROM perl:${BASE_TAG}
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends libjpeg-dev libpng-dev libgif-dev netcat \
@@ -7,4 +8,4 @@ RUN apt-get update \
 
 WORKDIR /app
 
-RUN cpanm Carton
+RUN cpanm Carton Perl::LanguageServer
