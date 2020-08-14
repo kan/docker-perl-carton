@@ -8,4 +8,4 @@ RUN apt-get update \
 
 WORKDIR /app
 
-RUN cpanm Carton Perl::LanguageServer
+RUN cpanm Carton
